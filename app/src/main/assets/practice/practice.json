@@ -1,0 +1,386 @@
+[
+ {
+  "id": "basico-01",
+  "level": "basico",
+  "name": "print()",
+  "summary": "Muestra texto o valores en la consola. Puedes separar varios valores con comas.",
+  "code": "print(\"Hola, mundo\")\nprint(\"Suma:\", 2 + 3)",
+  "output": "Hola, mundo\nSuma: 5"
+ },
+ {
+  "id": "basico-02",
+  "level": "basico",
+  "name": "Comentarios",
+  "summary": "Todo lo que sigue a # se ignora. Sirve para explicar tu código.",
+  "code": "# Esto es un comentario\nprint(\"Se ejecuta\")  # también puede ir al final\n# print(\"Esto no se ejecuta\")",
+  "output": "Se ejecuta"
+ },
+ {
+  "id": "basico-03",
+  "level": "basico",
+  "name": "Variables",
+  "summary": "Una variable es un nombre que guarda un valor. Se crea con el signo =.",
+  "code": "nombre = \"Luis\"\nedad = 20\naltura = 1.75\nprint(nombre, edad, altura)",
+  "output": "Luis 20 1.75"
+ },
+ {
+  "id": "basico-04",
+  "level": "basico",
+  "name": "Tipos de datos",
+  "summary": "Cada valor tiene un tipo: int (entero), float (decimal), str (texto) y bool (verdadero/falso). type() te lo dice.",
+  "code": "print(type(10))\nprint(type(3.14))\nprint(type(\"hola\"))\nprint(type(True))",
+  "output": "<class 'int'>\n<class 'float'>\n<class 'str'>\n<class 'bool'>"
+ },
+ {
+  "id": "basico-05",
+  "level": "basico",
+  "name": "input()",
+  "summary": "Pide al usuario que escriba algo. Siempre devuelve texto (str). En Ghost, la consola te deja escribir la respuesta cuando el programa la pide.",
+  "code": "nombre = input(\"¿Cómo te llamas? \")\nprint(\"Hola\", nombre)",
+  "output": "¿Cómo te llamas? Ana\nHola Ana"
+ },
+ {
+  "id": "basico-06",
+  "level": "basico",
+  "name": "int()",
+  "summary": "Convierte un valor a número entero. Si recibe un decimal, descarta la parte decimal.",
+  "code": "edad = int(\"15\")\nprint(edad + 1)\nprint(int(3.9))",
+  "output": "16\n3"
+ },
+ {
+  "id": "basico-07",
+  "level": "basico",
+  "name": "float()",
+  "summary": "Convierte un valor a número decimal.",
+  "code": "precio = float(\"2.50\")\nprint(precio * 2)",
+  "output": "5.0"
+ },
+ {
+  "id": "basico-08",
+  "level": "basico",
+  "name": "str()",
+  "summary": "Convierte un valor a texto, por ejemplo para unirlo con otras cadenas.",
+  "code": "n = 42\ntexto = \"Tengo \" + str(n) + \" años\"\nprint(texto)",
+  "output": "Tengo 42 años"
+ },
+ {
+  "id": "basico-09",
+  "level": "basico",
+  "name": "Operadores básicos",
+  "summary": "Suma +, resta -, multiplicación *, división /, división entera //, resto % y potencia **.",
+  "code": "print(7 + 2)\nprint(7 - 2)\nprint(7 * 2)\nprint(7 / 2)\nprint(7 // 2)\nprint(7 % 2)\nprint(7 ** 2)",
+  "output": "9\n5\n14\n3.5\n3\n1\n49"
+ },
+ {
+  "id": "basico-10",
+  "level": "basico",
+  "name": "Comparaciones",
+  "summary": "Comparan dos valores y devuelven True o False: ==, !=, >, <, >=, <=.",
+  "code": "print(5 == 5)\nprint(5 != 3)\nprint(2 > 8)\nprint(4 <= 4)",
+  "output": "True\nTrue\nFalse\nTrue"
+ },
+ {
+  "id": "basico-11",
+  "level": "basico",
+  "name": "if / else",
+  "summary": "Ejecuta un bloque u otro según se cumpla una condición. El código del bloque va indentado (4 espacios).",
+  "code": "edad = 18\nif edad >= 18:\n    print(\"Eres mayor de edad\")\nelse:\n    print(\"Eres menor de edad\")",
+  "output": "Eres mayor de edad"
+ },
+ {
+  "id": "basico-12",
+  "level": "basico",
+  "name": "elif",
+  "summary": "Permite probar varias condiciones en orden. Se ejecuta solo el primer bloque que se cumple.",
+  "code": "nota = 75\nif nota >= 90:\n    print(\"Excelente\")\nelif nota >= 60:\n    print(\"Aprobado\")\nelse:\n    print(\"Reprobado\")",
+  "output": "Aprobado"
+ },
+ {
+  "id": "basico-13",
+  "level": "basico",
+  "name": "and / or / not",
+  "summary": "Combinan condiciones: and (ambas), or (al menos una) y not (invierte).",
+  "code": "edad = 20\ntiene_carnet = True\nprint(edad >= 18 and tiene_carnet)\nprint(edad < 18 or tiene_carnet)\nprint(not tiene_carnet)",
+  "output": "True\nTrue\nFalse"
+ },
+ {
+  "id": "basico-14",
+  "level": "basico",
+  "name": "for",
+  "summary": "Repite un bloque para cada elemento de una secuencia. range(1, 4) genera 1, 2 y 3 (el final no se incluye).",
+  "code": "for i in range(1, 4):\n    print(\"Vuelta\", i)",
+  "output": "Vuelta 1\nVuelta 2\nVuelta 3"
+ },
+ {
+  "id": "basico-15",
+  "level": "basico",
+  "name": "while",
+  "summary": "Repite un bloque mientras la condición sea verdadera. Cuida que la condición llegue a ser falsa o el programa no terminará (puedes detenerlo con el botón de parar).",
+  "code": "contador = 3\nwhile contador > 0:\n    print(contador)\n    contador -= 1\nprint(\"¡Despegue!\")",
+  "output": "3\n2\n1\n¡Despegue!"
+ },
+ {
+  "id": "basico-16",
+  "level": "basico",
+  "name": "Listas",
+  "summary": "Una lista guarda varios valores en orden. Se escribe entre corchetes y el primer elemento está en la posición 0.",
+  "code": "frutas = [\"manzana\", \"pera\"]\nfrutas.append(\"uva\")\nprint(frutas)\nprint(len(frutas))\nprint(frutas[0])",
+  "output": "['manzana', 'pera', 'uva']\n3\nmanzana"
+ },
+ {
+  "id": "basico-17",
+  "level": "basico",
+  "name": "Cadenas de texto",
+  "summary": "Las cadenas tienen métodos útiles: upper(), lower(), replace(), len()...",
+  "code": "frase = \"Hola Mundo\"\nprint(frase.upper())\nprint(frase.lower())\nprint(frase.replace(\"Mundo\", \"Python\"))\nprint(len(frase))",
+  "output": "HOLA MUNDO\nhola mundo\nHola Python\n10"
+ },
+ {
+  "id": "basico-18",
+  "level": "basico",
+  "name": "f-strings",
+  "summary": "Una f-string inserta variables dentro del texto usando llaves {}. Es la forma más cómoda de dar formato.",
+  "code": "nombre = \"Ana\"\nedad = 15\nprint(f\"{nombre} tiene {edad} años\")\nprint(f\"El doble es {edad * 2}\")\nprint(f\"Pi con 2 decimales: {3.14159:.2f}\")",
+  "output": "Ana tiene 15 años\nEl doble es 30\nPi con 2 decimales: 3.14"
+ },
+ {
+  "id": "basico-19",
+  "level": "basico",
+  "name": "def",
+  "summary": "Define una función: un bloque de código con nombre que puedes reutilizar. return devuelve un resultado.",
+  "code": "def saludar(nombre):\n    return \"Hola \" + nombre\n\nprint(saludar(\"Ana\"))",
+  "output": "Hola Ana"
+ },
+ {
+  "id": "intermedio-20",
+  "level": "intermedio",
+  "name": "Listas: rebanadas y métodos",
+  "summary": "lista[a:b] toma una porción (sin incluir b). Además puedes ordenar, quitar e invertir elementos.",
+  "code": "n = [5, 3, 8, 1]\nprint(n[1:3])\nprint(n[-1])\nn.sort()\nprint(n)\nn.pop()\nprint(n)\nn.reverse()\nprint(n)",
+  "output": "[3, 8]\n1\n[1, 3, 5, 8]\n[1, 3, 5]\n[5, 3, 1]"
+ },
+ {
+  "id": "intermedio-21",
+  "level": "intermedio",
+  "name": "Tuplas",
+  "summary": "Son como listas, pero no se pueden modificar. Útiles para datos fijos y para devolver varios valores.",
+  "code": "punto = (3, 4)\nx, y = punto\nprint(x, y)\nprint(punto[0])",
+  "output": "3 4\n3"
+ },
+ {
+  "id": "intermedio-22",
+  "level": "intermedio",
+  "name": "Diccionarios",
+  "summary": "Guardan pares clave: valor. Accedes a un valor por su clave.",
+  "code": "persona = {\"nombre\": \"Ana\", \"edad\": 15}\npersona[\"ciudad\"] = \"Lima\"\nprint(persona[\"nombre\"])\nfor clave, valor in persona.items():\n    print(clave, \"->\", valor)",
+  "output": "Ana\nnombre -> Ana\nedad -> 15\nciudad -> Lima"
+ },
+ {
+  "id": "intermedio-23",
+  "level": "intermedio",
+  "name": "Conjuntos (set)",
+  "summary": "Colecciones sin elementos repetidos. Permiten unión, intersección y diferencia.",
+  "code": "a = {1, 2, 3, 3}\nb = {3, 4}\nprint(a)\nprint(a | b)\nprint(a & b)\nprint(a - b)",
+  "output": "{1, 2, 3}\n{1, 2, 3, 4}\n{3}\n{1, 2}"
+ },
+ {
+  "id": "intermedio-24",
+  "level": "intermedio",
+  "name": "break y continue",
+  "summary": "break termina el bucle; continue salta a la siguiente vuelta.",
+  "code": "for i in range(1, 8):\n    if i == 3:\n        continue\n    if i == 6:\n        break\n    print(i)",
+  "output": "1\n2\n4\n5"
+ },
+ {
+  "id": "intermedio-25",
+  "level": "intermedio",
+  "name": "Bucles anidados",
+  "summary": "Un bucle dentro de otro. Sirve para tablas y cuadrículas.",
+  "code": "for i in range(1, 4):\n    fila = \"\"\n    for j in range(1, 4):\n        fila += str(i * j) + \" \"\n    print(fila)",
+  "output": "1 2 3 \n2 4 6 \n3 6 9 "
+ },
+ {
+  "id": "intermedio-26",
+  "level": "intermedio",
+  "name": "Parámetros por defecto",
+  "summary": "Un parámetro puede tener un valor por defecto; una función puede devolver varios valores.",
+  "code": "def operar(a, b=2):\n    return a + b, a * b\n\nprint(operar(5))\nsuma, producto = operar(5, 3)\nprint(suma, producto)",
+  "output": "(7, 10)\n8 15"
+ },
+ {
+  "id": "intermedio-27",
+  "level": "intermedio",
+  "name": "try / except",
+  "summary": "Captura errores para que el programa no se detenga. finally se ejecuta siempre.",
+  "code": "try:\n    numero = int(\"abc\")\nexcept ValueError:\n    print(\"No es un número\")\nfinally:\n    print(\"Listo\")",
+  "output": "No es un número\nListo"
+ },
+ {
+  "id": "intermedio-28",
+  "level": "intermedio",
+  "name": "Comprensión de listas",
+  "summary": "Forma corta de crear una lista a partir de otra, con filtro opcional.",
+  "code": "cuadrados = [n ** 2 for n in range(1, 6)]\npares = [n for n in range(10) if n % 2 == 0]\nprint(cuadrados)\nprint(pares)",
+  "output": "[1, 4, 9, 16, 25]\n[0, 2, 4, 6, 8]"
+ },
+ {
+  "id": "intermedio-29",
+  "level": "intermedio",
+  "name": "enumerate y zip",
+  "summary": "enumerate da el índice junto al elemento; zip recorre varias listas a la vez.",
+  "code": "nombres = [\"Ana\", \"Luis\"]\nedades = [15, 17]\nfor i, n in enumerate(nombres, start=1):\n    print(i, n)\nfor n, e in zip(nombres, edades):\n    print(n, e)",
+  "output": "1 Ana\n2 Luis\nAna 15\nLuis 17"
+ },
+ {
+  "id": "intermedio-30",
+  "level": "intermedio",
+  "name": "split, join y strip",
+  "summary": "split divide un texto en partes, join las une y strip quita espacios de los extremos.",
+  "code": "texto = \"  uno,dos,tres  \"\npartes = texto.strip().split(\",\")\nprint(partes)\nprint(\" - \".join(partes))",
+  "output": "['uno', 'dos', 'tres']\nuno - dos - tres"
+ },
+ {
+  "id": "intermedio-31",
+  "level": "intermedio",
+  "name": "Módulo math",
+  "summary": "import trae herramientas de otros módulos. math ofrece funciones matemáticas.",
+  "code": "import math\nprint(math.sqrt(16))\nprint(math.pi)\nprint(math.floor(3.7))\nprint(math.ceil(3.2))",
+  "output": "4.0\n3.141592653589793\n3\n4"
+ },
+ {
+  "id": "intermedio-32",
+  "level": "intermedio",
+  "name": "sorted y lambda",
+  "summary": "sorted ordena cualquier colección; key indica el criterio. lambda crea una función corta.",
+  "code": "palabras = [\"pera\", \"uva\", \"manzana\"]\nprint(sorted(palabras))\nprint(sorted(palabras, key=len))\nprint(sorted(palabras, key=lambda p: p[-1]))",
+  "output": "['manzana', 'pera', 'uva']\n['uva', 'pera', 'manzana']\n['pera', 'uva', 'manzana']"
+ },
+ {
+  "id": "intermedio-33",
+  "level": "intermedio",
+  "name": "Recursión",
+  "summary": "Una función que se llama a sí misma. Necesita un caso base que detenga las llamadas.",
+  "code": "def factorial(n):\n    if n <= 1:\n        return 1\n    return n * factorial(n - 1)\n\nprint(factorial(5))",
+  "output": "120"
+ },
+ {
+  "id": "intermedio-34",
+  "level": "intermedio",
+  "name": "Leer y escribir archivos",
+  "summary": "open() con with abre un archivo y lo cierra solo. Este ejemplo crea notas.txt en la carpeta de tu proyecto.",
+  "code": "with open(\"notas.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"línea 1\\nlínea 2\\n\")\n\nwith open(\"notas.txt\", encoding=\"utf-8\") as f:\n    for linea in f:\n        print(linea.strip())",
+  "output": "línea 1\nlínea 2"
+ },
+ {
+  "id": "avanzado-35",
+  "level": "avanzado",
+  "name": "Clases y objetos",
+  "summary": "Una clase es un molde; cada objeto es una copia con sus propios datos. __init__ inicializa el objeto.",
+  "code": "class Perro:\n    def __init__(self, nombre):\n        self.nombre = nombre\n\n    def ladrar(self):\n        return f\"{self.nombre} dice guau\"\n\nrex = Perro(\"Rex\")\nprint(rex.ladrar())",
+  "output": "Rex dice guau"
+ },
+ {
+  "id": "avanzado-36",
+  "level": "avanzado",
+  "name": "Herencia",
+  "summary": "Una clase hija reutiliza y extiende a su clase padre. super() accede al padre.",
+  "code": "class Animal:\n    def sonido(self):\n        return \"...\"\n\nclass Gato(Animal):\n    def sonido(self):\n        return \"miau\"\n\nfor a in (Animal(), Gato()):\n    print(a.sonido())",
+  "output": "...\nmiau"
+ },
+ {
+  "id": "avanzado-37",
+  "level": "avanzado",
+  "name": "Métodos especiales",
+  "summary": "__str__, __eq__, __add__... personalizan cómo se comporta un objeto con print, == o +.",
+  "code": "class Vector:\n    def __init__(self, x, y):\n        self.x, self.y = x, y\n    def __add__(self, o):\n        return Vector(self.x + o.x, self.y + o.y)\n    def __str__(self):\n        return f\"({self.x}, {self.y})\"\n\nprint(Vector(1, 2) + Vector(3, 4))",
+  "output": "(4, 6)"
+ },
+ {
+  "id": "avanzado-38",
+  "level": "avanzado",
+  "name": "Generadores",
+  "summary": "yield produce valores uno a uno sin guardar todo en memoria.",
+  "code": "def cuenta(n):\n    for i in range(n):\n        yield i * i\n\nfor v in cuenta(5):\n    print(v)",
+  "output": "0\n1\n4\n9\n16"
+ },
+ {
+  "id": "avanzado-39",
+  "level": "avanzado",
+  "name": "Closures",
+  "summary": "Una función puede recordar variables de la función que la creó.",
+  "code": "def multiplicador(k):\n    def mult(x):\n        return x * k\n    return mult\n\ntriple = multiplicador(3)\nprint(triple(5))",
+  "output": "15"
+ },
+ {
+  "id": "avanzado-40",
+  "level": "avanzado",
+  "name": "Decoradores",
+  "summary": "Un decorador envuelve una función para añadirle comportamiento sin cambiar su código.",
+  "code": "def anunciar(f):\n    def envoltura(*args):\n        print(\"Llamando a\", f.__name__)\n        return f(*args)\n    return envoltura\n\n@anunciar\ndef sumar(a, b):\n    return a + b\n\nprint(sumar(2, 3))",
+  "output": "Llamando a sumar\n5"
+ },
+ {
+  "id": "avanzado-41",
+  "level": "avanzado",
+  "name": "*args y **kwargs",
+  "summary": "Permiten recibir cualquier cantidad de argumentos posicionales (*args) o con nombre (**kwargs).",
+  "code": "def mostrar(*args, **kwargs):\n    print(args)\n    print(kwargs)\n\nmostrar(1, 2, color=\"rojo\", talla=\"M\")",
+  "output": "(1, 2)\n{'color': 'rojo', 'talla': 'M'}"
+ },
+ {
+  "id": "avanzado-42",
+  "level": "avanzado",
+  "name": "Comprensión de diccionarios",
+  "summary": "Crea diccionarios y conjuntos con una sola expresión.",
+  "code": "cuadrados = {n: n ** 2 for n in range(1, 5)}\nprint(cuadrados)\nletras = {c for c in \"banana\"}\nprint(sorted(letras))",
+  "output": "{1: 1, 2: 4, 3: 9, 4: 16}\n['a', 'b', 'n']"
+ },
+ {
+  "id": "avanzado-43",
+  "level": "avanzado",
+  "name": "map, filter y reduce",
+  "summary": "Herramientas funcionales: transformar, filtrar y acumular colecciones.",
+  "code": "from functools import reduce\nn = [1, 2, 3, 4]\nprint(list(map(lambda x: x * 2, n)))\nprint(list(filter(lambda x: x % 2 == 0, n)))\nprint(reduce(lambda a, b: a + b, n))",
+  "output": "[2, 4, 6, 8]\n[2, 4]\n10"
+ },
+ {
+  "id": "avanzado-44",
+  "level": "avanzado",
+  "name": "Excepciones propias",
+  "summary": "Puedes crear tus propios errores heredando de Exception y lanzarlos con raise.",
+  "code": "class SaldoInsuficiente(Exception):\n    pass\n\ndef retirar(saldo, monto):\n    if monto > saldo:\n        raise SaldoInsuficiente(f\"Faltan {monto - saldo}\")\n    return saldo - monto\n\ntry:\n    retirar(50, 80)\nexcept SaldoInsuficiente as e:\n    print(\"Error:\", e)",
+  "output": "Error: Faltan 30"
+ },
+ {
+  "id": "avanzado-45",
+  "level": "avanzado",
+  "name": "Gestor de contexto",
+  "summary": "with garantiza que algo se prepare y se limpie, incluso si hay errores. Puedes crear el tuyo con __enter__ y __exit__.",
+  "code": "class Bloque:\n    def __enter__(self):\n        print(\"entrar\")\n        return self\n    def __exit__(self, *e):\n        print(\"salir\")\n\nwith Bloque():\n    print(\"dentro\")",
+  "output": "entrar\ndentro\nsalir"
+ },
+ {
+  "id": "avanzado-46",
+  "level": "avanzado",
+  "name": "dataclasses",
+  "summary": "@dataclass genera automáticamente __init__, __repr__ y __eq__ a partir de los campos.",
+  "code": "from dataclasses import dataclass\n\n@dataclass\nclass Punto:\n    x: int\n    y: int = 0\n\nprint(Punto(3))\nprint(Punto(1, 2) == Punto(1, 2))",
+  "output": "Punto(x=3, y=0)\nTrue"
+ },
+ {
+  "id": "avanzado-47",
+  "level": "avanzado",
+  "name": "lru_cache (memoización)",
+  "summary": "@lru_cache recuerda resultados ya calculados y acelera funciones recursivas como Fibonacci.",
+  "code": "from functools import lru_cache\n\n@lru_cache(maxsize=None)\ndef fib(n):\n    return n if n < 2 else fib(n - 1) + fib(n - 2)\n\nprint(fib(50))",
+  "output": "12586269025"
+ },
+ {
+  "id": "avanzado-48",
+  "level": "avanzado",
+  "name": "itertools",
+  "summary": "El módulo itertools ofrece combinaciones, permutaciones y más, de forma eficiente.",
+  "code": "from itertools import combinations, permutations\nprint(list(combinations(\"abc\", 2)))\nprint(len(list(permutations([1, 2, 3]))))",
+  "output": "[('a', 'b'), ('a', 'c'), ('b', 'c')]\n6"
+ }
+]

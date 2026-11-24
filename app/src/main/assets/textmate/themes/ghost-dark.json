@@ -1,0 +1,31 @@
+{
+  "name": "ghost-dark",
+  "type": "dark",
+  "colors": {
+    "editor.background": "#0B0B0C",
+    "editor.foreground": "#ECECEC",
+    "editorLineNumber.foreground": "#4B4B50",
+    "editorLineNumber.activeForeground": "#A0A0A8",
+    "editor.selectionBackground": "#3A4A6B",
+    "editor.lineHighlightBackground": "#151517",
+    "editorCursor.foreground": "#FFFFFF"
+  },
+  "tokenColors": [
+    { "scope": ["comment", "comment.line.number-sign.python"], "settings": { "foreground": "#6C7986", "fontStyle": "italic" } },
+    { "scope": ["keyword.control", "keyword.control.python", "storage.type", "storage.type.function", "storage.type.class", "keyword.operator.logical"], "settings": { "foreground": "#FC5FA3" } },
+    { "scope": ["string", "string.quoted"], "settings": { "foreground": "#FC8F5D" } },
+    { "scope": ["constant.character.escape"], "settings": { "foreground": "#FFC27A" } },
+    { "scope": ["constant.numeric"], "settings": { "foreground": "#D9C97C" } },
+    { "scope": ["constant.language"], "settings": { "foreground": "#FC5FA3", "fontStyle": "bold" } },
+    { "scope": ["entity.name.function", "entity.name.function.python"], "settings": { "foreground": "#6BDFFF" } },
+    { "scope": ["entity.name.function.call"], "settings": { "foreground": "#6BDFFF" } },
+    { "scope": ["support.function.builtin"], "settings": { "foreground": "#B48BFF" } },
+    { "scope": ["entity.name.type.class"], "settings": { "foreground": "#5DD8A6" } },
+    { "scope": ["entity.name.function.decorator"], "settings": { "foreground": "#FFA14F" } },
+    { "scope": ["variable.language.special.self"], "settings": { "foreground": "#B4A0FF", "fontStyle": "italic" } },
+    { "scope": ["variable.other.constant"], "settings": { "foreground": "#FFB86B" } },
+    { "scope": ["variable.other.property"], "settings": { "foreground": "#8FB8D8" } },
+    { "scope": ["variable.other", "variable.other.python"], "settings": { "foreground": "#A9D5FF" } },
+    { "scope": ["keyword.operator"], "settings": { "foreground": "#C9C9CF" } }
+  ]
+}
